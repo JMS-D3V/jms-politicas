@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Comanda Certa</title>
+<meta name="description" content="Política de Privacidade do aplicativo Comanda Certa: Mesas e Pedidos, da JMS Soluções e Gestão.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+
+<h1>Política de Privacidade</h1>
+<p class="sub">
+  <strong>Comanda Certa: Mesas e Pedidos</strong> (<code>br.com.jms.comandacerta</code>)<br>
+  Responsável: JMS Soluções e Gestão · Última atualização: 12 de agosto de 2026
+</p>
+
+<div class="destaque">
+  <p>O <strong>movimento do seu estabelecimento</strong> — mesas, pedidos, preços,
+  quanto você vendeu — fica no seu aparelho e nunca é enviado para nós.</p>
+  <p>O que sai do aparelho está listado abaixo, item por item, e a maior parte só
+  acontece se <strong>você escolher</strong> que aconteça.</p>
+</div>
+
+<h2>1. O que nunca sai do seu aparelho</h2>
+<p>Mesas, categorias, produtos, preços, estoque, itens lançados, cancelamentos,
+formas de pagamento, totais e o nome das pessoas da sua equipe ficam num banco de
+dados que só o Comanda Certa enxerga, no armazenamento interno do aparelho.</p>
+<ul>
+  <li>Não existe servidor nosso recebendo isso</li>
+  <li>Nós, da JMS, <strong>não temos acesso</strong> ao movimento do seu comércio</li>
+  <li>Com vários aparelhos, o tráfego entre eles fica <strong>dentro do Wi-Fi do
+      seu estabelecimento</strong> e não passa pela internet</li>
+</ul>
+
+<h2>2. O que sai, e por quê</h2>
+
+<h3>2.1 Se você entrar com sua conta Google — opcional</h3>
+<p>O app funciona <strong>inteiro</strong> sem login. Se você escolher entrar,
+recebemos do Google e guardamos:</p>
+<table>
+  <tr><th>Dado</th><th>Para quê</th></tr>
+  <tr><td>Seu e-mail</td><td>Identificar sua conta e habilitar o backup no seu Drive</td></tr>
+  <tr><td>Seu nome e foto do perfil</td><td>Mostrar na tela quem está conectado</td></tr>
+  <tr><td>Data do último acesso</td><td>Saber se a conta está em uso</td></tr>
+</table>
+<p>Isso fica no <strong>Firebase Authentication</strong>, do Google, sob nossa
+administração. Não usamos esses dados para marketing e não os vendemos nem
+compartilhamos com ninguém.</p>
+<p>Se você não entrar, nada disso existe — e o app não pede, não insiste e não
+esconde recurso essencial atrás disso.</p>
+
+<h3>2.2 Backup no seu Google Drive — opcional</h3>
+<p>Ao entrar com o Google, você pode mandar o backup para o
+<strong>seu próprio Drive</strong>.</p>
+<ul>
+  <li>O arquivo vai para a <strong>sua</strong> conta, não para um servidor nosso</li>
+  <li>Usamos o escopo <code>drive.file</code>, que dá acesso <strong>apenas aos
+      arquivos que este app criou</strong>. O app não enxerga, não lê e não lista
+      o resto do seu Drive</li>
+  <li>Você pode apagar esse arquivo pelo Drive a qualquer momento, sem falar conosco</li>
+</ul>
+<p>Também continua existindo o backup em <code>.zip</code> <strong>sem login
+nenhum</strong>, salvo onde você quiser no aparelho.</p>
+
+<h3>2.3 Relatório de travamento — Firebase Crashlytics</h3>
+<p>Quando o app fecha sozinho, é enviado um relatório técnico: modelo do aparelho,
+versão do Android, versão do app e a pilha de execução do erro.</p>
+<p>Serve para uma coisa só: consertar. Sem isso, um travamento que só acontece em
+determinado modelo de celular vira uma nota 1 na loja sem que a gente saiba o
+motivo. <strong>O relatório não contém o movimento do seu estabelecimento.</strong></p>
+
+<h3>2.4 Medição de uso — Google Analytics para Firebase</h3>
+<p>Coletamos de forma agregada quantas pessoas abrem o app e quais telas são
+usadas, para decidir o que melhorar. Não identifica você pessoalmente nem
+registra os valores do seu caixa.</p>
+
+<h3>2.5 Anúncios — Google AdMob</h3>
+<p>A versão gratuita mostra um banner no rodapé. O AdMob pode usar o
+<strong>Identificador de Publicidade (Advertising ID)</strong> do aparelho.</p>
+<ul>
+  <li>Esse identificador é gerenciado pelo Google, não por nós</li>
+  <li>Redefina ou desative a personalização em <em>Configurações do Android →
+      Google → Anúncios</em></li>
+  <li>Ao comprar a remoção de anúncios, nenhum anúncio é mais carregado</li>
+  <li>O banner <strong>nunca</strong> aparece na comanda, no lançamento de pedido
+      ou no fechamento de conta</li>
+</ul>
+<p>Política do Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
+
+<h2>3. Permissões que o app pede</h2>
+<table>
+  <tr><th>Permissão</th><th>Para quê</th></tr>
+  <tr><td>Internet e estado da rede</td><td>Anúncio, compra na Play, login e backup no Drive. O movimento do comércio não passa por aqui</td></tr>
+  <tr><td>Wi-Fi e serviços de rede local</td><td>Conectar os celulares da equipe dentro do estabelecimento</td></tr>
+  <tr><td>Serviço em primeiro plano</td><td>Manter o aparelho-servidor de pé durante o expediente</td></tr>
+  <tr><td>Notificações</td><td>Mostrar o aviso permanente enquanto o servidor está ligado</td></tr>
+  <tr><td>Câmera</td><td>Só se <strong>você</strong> tirar foto de um produto para o cardápio</td></tr>
+  <tr><td>Cobrança</td><td>Processar a compra da remoção de anúncios</td></tr>
+</table>
+<p>O app <strong>não</strong> pede localização, contatos, microfone, agenda nem telefone.</p>
+
+<h2>4. Dados dos seus clientes — leia com atenção</h2>
+<p>O Comanda Certa <strong>não pede</strong> nome, telefone ou CPF de cliente
+final. O app opera inteiro só com número de mesa.</p>
+<p>Se você <strong>optar</strong> por escrever o nome de um cliente na observação
+da comanda, esse dado fica no seu aparelho e <strong>você é o controlador
+dele</strong> perante a Lei 13.709/2018 (LGPD). Somos apenas o fornecedor da
+ferramenta e não temos acesso a esse conteúdo. As obrigações da LGPD sobre esse
+dado — finalidade, guarda, exclusão a pedido do titular — são suas.</p>
+
+<h2>5. Seus direitos</h2>
+<ul>
+  <li><strong>Usar sem conta:</strong> o app inteiro funciona sem login</li>
+  <li><strong>Levar embora:</strong> exporte o backup quando quiser</li>
+  <li><strong>Apagar do aparelho:</strong> "Apagar todos os dados", nos Ajustes</li>
+  <li><strong>Apagar sua conta:</strong> veja
+      <a href="excluir-conta/">como excluir sua conta e seus dados</a></li>
+  <li><strong>Sair dos anúncios:</strong> compre a remoção, ou desative a
+      personalização no Android</li>
+</ul>
+
+<h2>6. Crianças</h2>
+<p>Ferramenta de trabalho para comércio, sem público infantil.</p>
+
+<h2>7. Mudanças</h2>
+<p>A data no topo indica a versão vigente. Alterações relevantes vão na descrição
+da atualização na Play Store.</p>
+
+<h2>8. Contato</h2>
+<p><strong><a href="mailto:johnmaycos@gmail.com">johnmaycos@gmail.com</a></strong>
+— inclusive para pedidos relacionados à LGPD.</p>
+
+<footer>
+  JMS Soluções e Gestão ·
+  <a href="termos/">Termos de Uso</a> ·
+  <a href="excluir-conta/">Excluir minha conta</a> ·
+  <a href="../">Outros apps da JMS</a>
+</footer>
+
+</main>
+</body>
+</html>

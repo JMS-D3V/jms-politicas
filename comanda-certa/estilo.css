@@ -1,0 +1,104 @@
+:root {
+  --papel: #fbf7f3;
+  --tinta: #241d18;
+  --tinta-fraca: #6b5f56;
+  --terracota: #b4552d;
+  --linha: #e5dbd1;
+  --caixa: #f4ece4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #17130f;
+    --tinta: #f0e7de;
+    --tinta-fraca: #a8998c;
+    --terracota: #e08355;
+    --linha: #33292140;
+    --caixa: #221b15;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2.5rem 1.25rem 5rem;
+  background: var(--papel);
+  color: var(--tinta);
+  font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main { max-width: 44rem; margin: 0 auto; }
+
+h1 {
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
+  line-height: 1.2;
+  margin: 0 0 .35em;
+  letter-spacing: -.02em;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 2.4em 0 .6em;
+  padding-top: 1.4em;
+  border-top: 1px solid var(--linha);
+  letter-spacing: -.01em;
+}
+
+h3 { font-size: 1.05rem; margin: 1.8em 0 .5em; }
+
+p, li { margin: .7em 0; }
+ul { padding-left: 1.2em; }
+
+a { color: var(--terracota); }
+
+.sub {
+  color: var(--tinta-fraca);
+  font-size: .95rem;
+  margin: 0 0 2rem;
+}
+
+.destaque {
+  background: var(--caixa);
+  border-left: 3px solid var(--terracota);
+  padding: 1rem 1.15rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.6em 0;
+}
+
+.destaque p:first-child { margin-top: 0; }
+.destaque p:last-child { margin-bottom: 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4em 0;
+  font-size: .94rem;
+}
+
+th, td {
+  text-align: left;
+  padding: .6rem .7rem;
+  border-bottom: 1px solid var(--linha);
+  vertical-align: top;
+}
+
+th { color: var(--tinta-fraca); font-weight: 600; }
+
+code {
+  background: var(--caixa);
+  padding: .12em .4em;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--linha);
+  color: var(--tinta-fraca);
+  font-size: .9rem;
+}
+
+.voltar { display: inline-block; margin-bottom: 1.5rem; font-size: .93rem; }
