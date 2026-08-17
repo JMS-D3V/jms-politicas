@@ -13,8 +13,8 @@
 <h1>Política de Privacidade</h1>
 <p class="sub">
   <strong>PDV Certo: Venda Rápida</strong> (<code>br.com.jms.pdvcerto</code>)<br>
-  Responsável: JMS Soluções e Gestão · Versão 2.0 · Vigência: 12 de agosto de 2026<br>
-  Substitui a versão 1.0, que descrevia o app sem anúncio
+  Responsável: JMS Soluções e Gestão · Versão 2.1 · Vigência: 17 de agosto de 2026<br>
+  Substitui a versão 2.0, que descrevia o app sem compra dentro dele
 </p>
 
 <div class="destaque">
@@ -26,7 +26,21 @@
   disso. A seção 2 explica exatamente o que é, e a seção 3 mostra como desligar.</p>
 </div>
 
-<h2>O que mudou nesta versão</h2>
+<h2>O que mudou na versão 2.1</h2>
+<p>Duas coisas, e as duas por causa da versão <strong>1.0.2</strong> do app:</p>
+<p><strong>1. Existe uma compra dentro do app.</strong> É única, não assinatura, e
+remove o anúncio. Está descrita no fim da seção 3. Quem compra passa a
+<strong>não</strong> enviar mais o identificador de publicidade, porque não há
+mais anúncio a escolher.</p>
+<p><strong>2. Quatro permissões novas aparecem na loja</strong> — Wi-Fi,
+multicast, serviço em primeiro plano e notificações. Elas vieram junto com a
+biblioteca que vai ligar vários caixas na mesma rede, e <strong>essa função
+ainda não tem tela</strong>. A seção 4 explica por que estão lá antes da hora,
+em vez de deixar você descobrir sozinho na página da Play.</p>
+<p><strong>O que não mudou:</strong> nada do que sai do aparelho. O movimento do
+comércio continua inteiramente no seu celular.</p>
+
+<h2>O que mudou na versão 2.0</h2>
 <p>A versão 1.0 desta política dizia que o app <em>não coletava nada</em> e
 <em>não pedia nenhuma permissão</em>. Isso era verdade e deixou de ser: a partir
 da versão <strong>1.0.1</strong> do aplicativo existe um <strong>banner de
@@ -99,9 +113,12 @@ Relatórios, depois de todos os números.</p>
 </ul>
 <p>O caminho muda um pouco conforme o fabricante do celular. Procure por
 "Anúncios" dentro das configurações do Google no seu aparelho.</p>
-<p><strong>Quer o app sem anúncio nenhum?</strong> Está planejado: a remoção do
-anúncio será uma compra dentro do app. Enquanto ela não existir, o caminho acima
-é o controle disponível.</p>
+<p><strong>Quer o app sem anúncio nenhum?</strong> A partir da versão 1.0.2
+existe uma <strong>compra única</strong> dentro do app que remove o banner de
+todas as telas, para sempre. Ela fica em <em>Ajustes → Anúncio</em>.</p>
+<p>A cobrança é processada pela <strong>Google Play</strong>, sob as regras de
+reembolso da própria loja. <strong>A JMS não recebe nem guarda dados do seu
+cartão</strong> — nós só sabemos que a compra existe, não como foi paga.</p>
 
 <h2>4. Permissões que o app pede</h2>
 <table>
@@ -109,7 +126,21 @@ anúncio será uma compra dentro do app. Enquanto ela não existir, o caminho ac
   <tr><td>Internet</td><td>O SDK do AdMob busca o anúncio na rede</td></tr>
   <tr><td>Ver conexões de rede</td><td>Checar se há internet antes de tentar buscar</td></tr>
   <tr><td>Identificador de publicidade</td><td>O que a seção 2 descreve</td></tr>
+  <tr><td>Ver conexões de Wi-Fi</td><td>Descobrir o endereço do aparelho na rede do estabelecimento</td></tr>
+  <tr><td>Recepção multicast no Wi-Fi</td><td>Como um caixa encontra o outro, sem ninguém digitar IP</td></tr>
+  <tr><td>Serviço em primeiro plano</td><td>Manter o caixa servidor de pé com a tela apagada</td></tr>
+  <tr><td>Notificações</td><td>A notificação fixa do servidor ligado, com o botão de desligar</td></tr>
 </table>
+
+<h3>Por que as quatro últimas ainda não fazem nada</h3>
+<p>Sejamos exatos: as permissões de rede local entraram na 1.0.2 junto com a
+biblioteca que vai ligar vários caixas, e <strong>essa função ainda não tem
+tela</strong>. Não há como ligar servidor nenhum no app de hoje.</p>
+<p>Elas aparecem na lista da loja mesmo assim, e você merece saber por quê em vez
+de descobrir sozinho e desconfiar. Quando a função chegar, vai servir para dois
+ou mais caixas do <strong>mesmo estabelecimento</strong> conversarem pelo Wi-Fi
+do local — e esse tráfego <strong>não vai para a internet</strong>, não passa por
+servidor nosso, e continua sem enviar o seu movimento para lugar nenhum.</p>
 <p>Você pode conferir a lista na própria Play Store, em <em>Sobre este app →
 Permissões do app</em>. <strong>As três existem por causa do anúncio</strong> —
 a venda, o cadastro, o histórico e os relatórios funcionam com o celular em modo
