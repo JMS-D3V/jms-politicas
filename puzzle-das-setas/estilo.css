@@ -1,0 +1,87 @@
+/* Identidade JMS Games — mesma paleta dos apps (madeira e papel de arroz). */
+:root {
+  --papel: #f7f3ec;
+  --papel-cartao: #fffbf4;
+  --madeira-clara: #d9b98c;
+  --madeira-media: #c5a06b;
+  --madeira-escura: #8a6a42;
+  --texto: #3e362c;
+  --texto-suave: #8b7f6e;
+  --musgo: #2f5d50;
+  --ouro: #c9a24b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #1e1a16;
+    --papel-cartao: #2a241e;
+    --texto: #f2eadf;
+    --texto-suave: #b3a492;
+    --madeira-clara: #8c7250;
+    --musgo: #7fc0a9;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 64px;
+  background: var(--papel);
+  color: var(--texto);
+  font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+  line-height: 1.65;
+  font-size: 17px;
+}
+
+header {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 0 24px;
+  border-bottom: 1px solid color-mix(in srgb, var(--madeira-escura) 30%, transparent);
+}
+
+main { max-width: 760px; margin: 0 auto; }
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing: 0.5px; }
+h2 { font-size: 1.3rem; margin: 40px 0 10px; color: var(--madeira-escura); }
+h3 { font-size: 1.05rem; margin: 24px 0 6px; }
+
+.marca { color: var(--texto-suave); font-size: 0.95rem; margin: 0; }
+.atualizado { color: var(--texto-suave); font-size: 0.85rem; margin-top: 8px; }
+
+a { color: var(--musgo); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+
+.cartao {
+  background: var(--papel-cartao);
+  border: 1px solid color-mix(in srgb, var(--madeira-clara) 45%, transparent);
+  border-radius: 18px;
+  padding: 18px 22px;
+  margin: 22px 0;
+}
+
+.destaque { border-left: 4px solid var(--ouro); }
+
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid color-mix(in srgb, var(--madeira-escura) 22%, transparent); vertical-align: top; }
+th { color: var(--madeira-escura); font-weight: 600; }
+
+footer {
+  max-width: 760px;
+  margin: 56px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--madeira-escura) 30%, transparent);
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+.voltar { display: inline-block; margin-top: 28px; font-size: 0.95rem; }
